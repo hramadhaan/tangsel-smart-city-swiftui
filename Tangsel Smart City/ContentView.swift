@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isAuthenticated = AppManager.isAuthenticated()
+    
+    @StateObject private var authVM = AuthViewModel()
+    
+    init() {
+        authVM.autoLogin()
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group {
+            isAuthenticated ? AnyView(HomeScreen()) : AnyView(LoginScreen())
+        }
+        .onReceive(AppManager.authenticated, perform: {
+            isAuthenticated = $0
+        })
     }
 }
 

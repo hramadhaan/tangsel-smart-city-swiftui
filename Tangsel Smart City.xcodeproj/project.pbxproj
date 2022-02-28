@@ -13,6 +13,14 @@
 		E49F07E927CC71DA0049E758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49F07E827CC71DA0049E758 /* Assets.xcassets */; };
 		E49F07EC27CC71DA0049E758 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49F07EB27CC71DA0049E758 /* Preview Assets.xcassets */; };
 		E49F07EF27CC71DA0049E758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49F07ED27CC71DA0049E758 /* LaunchScreen.storyboard */; };
+		E49F07FF27CC82AC0049E758 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49F07FE27CC82AC0049E758 /* LoginScreen.swift */; };
+		E49F080327CC8ED30049E758 /* AuthModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49F080227CC8ED30049E758 /* AuthModelView.swift */; };
+		E49F080627CC8EE30049E758 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49F080527CC8EE30049E758 /* AuthService.swift */; };
+		E49F080927CC8EF40049E758 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49F080827CC8EF40049E758 /* AuthModel.swift */; };
+		E49F080C27CCA9AD0049E758 /* RelationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49F080B27CCA9AD0049E758 /* RelationModel.swift */; };
+		E49F080F27CCCDE00049E758 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49F080E27CCCDE00049E758 /* Token.swift */; };
+		E49F081227CCD7B90049E758 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49F081127CCD7B90049E758 /* HomeScreen.swift */; };
+		E49F081527CCDB460049E758 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49F081427CCDB460049E758 /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		E49F07EB27CC71DA0049E758 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E49F07EE27CC71DA0049E758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E49F07F027CC71DA0049E758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49F07FE27CC82AC0049E758 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E49F080227CC8ED30049E758 /* AuthModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModelView.swift; sourceTree = "<group>"; };
+		E49F080527CC8EE30049E758 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E49F080827CC8EF40049E758 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		E49F080B27CCA9AD0049E758 /* RelationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationModel.swift; sourceTree = "<group>"; };
+		E49F080E27CCCDE00049E758 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		E49F081127CCD7B90049E758 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E49F081427CCDB460049E758 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,12 @@
 		E49F07E127CC71D80049E758 /* Tangsel Smart City */ = {
 			isa = PBXGroup;
 			children = (
+				E49F07FD27CC82740049E758 /* Component View */,
+				E49F07FC27CC826D0049E758 /* Utils */,
+				E49F07FA27CC82610049E758 /* Services */,
+				E49F07F927CC82580049E758 /* Model View */,
+				E49F07F827CC7D910049E758 /* Models */,
+				E49F07F727CC7D880049E758 /* Screens */,
 				E49F07E227CC71D80049E758 /* AppDelegate.swift */,
 				E49F07E427CC71D80049E758 /* SceneDelegate.swift */,
 				E49F07E627CC71D80049E758 /* ContentView.swift */,
@@ -73,6 +95,56 @@
 				E49F07EB27CC71DA0049E758 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E49F07F727CC7D880049E758 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E49F07FE27CC82AC0049E758 /* LoginScreen.swift */,
+				E49F081127CCD7B90049E758 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E49F07F827CC7D910049E758 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E49F080827CC8EF40049E758 /* AuthModel.swift */,
+				E49F080B27CCA9AD0049E758 /* RelationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E49F07F927CC82580049E758 /* Model View */ = {
+			isa = PBXGroup;
+			children = (
+				E49F080227CC8ED30049E758 /* AuthModelView.swift */,
+			);
+			path = "Model View";
+			sourceTree = "<group>";
+		};
+		E49F07FA27CC82610049E758 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E49F080527CC8EE30049E758 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E49F07FC27CC826D0049E758 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E49F080E27CCCDE00049E758 /* Token.swift */,
+				E49F081427CCDB460049E758 /* AppManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E49F07FD27CC82740049E758 /* Component View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Component View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +217,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E49F080F27CCCDE00049E758 /* Token.swift in Sources */,
 				E49F07E327CC71D80049E758 /* AppDelegate.swift in Sources */,
+				E49F07FF27CC82AC0049E758 /* LoginScreen.swift in Sources */,
+				E49F080927CC8EF40049E758 /* AuthModel.swift in Sources */,
+				E49F080327CC8ED30049E758 /* AuthModelView.swift in Sources */,
+				E49F080627CC8EE30049E758 /* AuthService.swift in Sources */,
+				E49F081227CCD7B90049E758 /* HomeScreen.swift in Sources */,
+				E49F081527CCDB460049E758 /* AppManager.swift in Sources */,
+				E49F080C27CCA9AD0049E758 /* RelationModel.swift in Sources */,
 				E49F07E527CC71D80049E758 /* SceneDelegate.swift in Sources */,
 				E49F07E727CC71D80049E758 /* ContentView.swift in Sources */,
 			);
